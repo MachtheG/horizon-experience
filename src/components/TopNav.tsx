@@ -6,21 +6,11 @@ import { useState } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about-us" },
-  { label: "Programs", href: "/programs" },
-  { label: "Grevy's Zebra", href: "/grevys-zebra" },
-  { label: "Community", href: "/community" },
-  { label: "News", href: "/news" },
-  { label: "Donate", href: "/donate" },
-  { label: "Contact", href: "/contact" },
-];
-
-const exploreItems = [
-  { label: "Interactive Range Map", href: "/interactive-range-map" },
-  { label: "Digital Impact", href: "/digital-impact" },
-  { label: "Field Journal", href: "/field-journal" },
+  { label: "Our Programs", href: "/programs" },
+  { label: "Conservation Status", href: "/conservation-status" },
+  { label: "Nkirreten Project", href: "/nkirreten-project" },
   { label: "Get Involved", href: "/get-involved" },
-  { label: "Shop", href: "/shop" },
+  { label: "Donate", href: "/donate" },
 ];
 
 export default function TopNav() {
@@ -54,23 +44,6 @@ export default function TopNav() {
                   <Link
                     href={item.href}
                     className={`nav-link ${isActive ? "is-active" : ""}`}
-                    onClick={() => setOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-
-          <ul className="nav-list nav-list-secondary">
-            {exploreItems.map((item) => {
-              const isActive = pathname === item.href;
-              return (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`nav-link nav-link-secondary ${isActive ? "is-active" : ""}`}
                     onClick={() => setOpen(false)}
                   >
                     {item.label}

@@ -9,11 +9,11 @@ export default function InteractiveRangeMapPage() {
             <p className="eyebrow">Recommended Experience</p>
             <h1 className="hero-title">Interactive Range Map</h1>
             <p className="hero-subtitle mono">
-              A digital wayfinding layer for habitat zones, water-pressure corridors, and field activity nodes.
+              A digital-space map view of conservancy areas, zebra distribution, and movement pressure corridors.
             </p>
             <p className="lead">
-              This concept page is structured for future GIS integration. It outlines how users can explore species
-              range context and understand why landscape connectivity matters.
+              This 3D-ready concept is structured for future GIS integration. It helps users explore landscape
+              context, seasonal pressure zones, and why habitat connectivity matters for Grevy&apos;s zebra survival.
             </p>
           </div>
           <div className="hero-media">
@@ -24,6 +24,24 @@ export default function InteractiveRangeMapPage() {
               className="neo-image-frame"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="card" style={{ perspective: "1200px" }}>
+        <h3>3D Layer Stack</h3>
+        <div className="card-grid cols-3" style={{ marginTop: "0.8rem" }}>
+          <article className="card" style={{ transform: "translateZ(28px)", borderColor: "rgba(55, 228, 210, 0.44)" }}>
+            <h3>Base Terrain</h3>
+            <p>Conservancy geometry and elevation context for Northern Kenya operating landscapes.</p>
+          </article>
+          <article className="card" style={{ transform: "translateZ(18px)", borderColor: "rgba(78, 196, 255, 0.44)" }}>
+            <h3>Zebra Distribution</h3>
+            <p>Population concentration heat zones and recurring movement corridors.</p>
+          </article>
+          <article className="card" style={{ transform: "translateZ(8px)", borderColor: "rgba(255, 186, 91, 0.44)" }}>
+            <h3>Pressure Signals</h3>
+            <p>Water stress markers, infrastructure conflict points, and monitoring priority areas.</p>
+          </article>
         </div>
       </section>
 

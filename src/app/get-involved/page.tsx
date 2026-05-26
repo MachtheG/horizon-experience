@@ -15,8 +15,8 @@ export default function GetInvolvedPage() {
               <Link href="/donate" className="neo-btn neo-btn-amber">
                 Donate
               </Link>
-              <Link href="/contact" className="neo-btn">
-                Partner With Us
+              <Link href="/interactive-range-map" className="neo-btn">
+                Interactive Range Map
               </Link>
             </div>
           </div>
@@ -33,12 +33,25 @@ export default function GetInvolvedPage() {
           <p>Use your networks to expand awareness of Grevy&apos;s zebra conservation urgency and progress.</p>
         </article>
         <article className="card">
-          <h3>Collaborative Research</h3>
-          <p>Contribute expertise in ecology, social systems, monitoring, and conservation technology.</p>
+          <h3>Education & Scholarships</h3>
+          <p>Support future conservation leaders through targeted education and scholarship pathways.</p>
+          <div className="button-row" style={{ marginTop: "0.8rem" }}>
+            <Link href="/education-scholarships" className="neo-btn">
+              View Scholarships
+            </Link>
+          </div>
         </article>
         <article className="card">
-          <h3>Institutional Partnerships</h3>
-          <p>Support long-term resilience through aligned philanthropic and strategic collaborations.</p>
+          <h3>Official Reports</h3>
+          <p>Access the 2024 Annual Report and historical reports directly from the official Trust site.</p>
+          <div className="button-row" style={{ marginTop: "0.8rem" }}>
+            <Link href="https://www.grevyszebratrust.org/annual-reports/2024-annual-report/" className="neo-btn" target="_blank" rel="noreferrer">
+              2024 Annual Report
+            </Link>
+            <Link href="https://www.grevyszebratrust.org/annual-reports/" className="neo-btn" target="_blank" rel="noreferrer">
+              All Reports
+            </Link>
+          </div>
         </article>
       </section>
     </main>

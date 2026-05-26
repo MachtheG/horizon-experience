@@ -10,22 +10,20 @@ export default function Home() {
         <div className="hero-grid">
           <div>
             <p className="eyebrow">Northern Kenya Conservation Network</p>
-            <h1 className="hero-title">Grevy&apos;s Zebra, Reimagined for the Digital Age</h1>
+            <h1 className="hero-title">Grevy&apos;s Zebra in Digital Space</h1>
             <p className="hero-subtitle mono">
-              Community-led conservation, real-time field insight, and resilient rangelands for one of the
-              world&apos;s most endangered large mammals.
+              To conserve and grow the Grevy&rsquo;s zebra population in Northern Kenya.
             </p>
             <p className="lead">
-              Grevy&apos;s Zebra Trust works with local communities, scouts, and partners to secure a future for
-              Grevy&apos;s zebra through rangeland restoration, biodiversity monitoring, and practical action where
-              wildlife and people share space.
+              Grevy&apos;s Zebra Trust combines community leadership, field monitoring, and adaptive rangeland
+              stewardship to secure a future for this endangered species across northern Kenya.
             </p>
             <div className="button-row" style={{ marginTop: "1rem" }}>
               <Link href="/donate" className="neo-btn neo-btn-amber">
                 Support Conservation
               </Link>
               <Link href="/programs" className="neo-btn">
-                Explore Programs
+                Our Programs
               </Link>
             </div>
           </div>
@@ -44,38 +42,38 @@ export default function Home() {
 
       <section className="stats-grid" aria-label="Key conservation facts">
         <article className="stat-card">
-          <h3>Conservation Priority</h3>
-          <span className="stat-number">Endangered</span>
-          <p className="mono">Grevy&apos;s zebra remains globally threatened and requires long-term habitat security.</p>
-        </article>
-        <article className="stat-card">
-          <h3>Population Signal</h3>
+          <h3>Global Population</h3>
           <span className="stat-number">~3,000</span>
-          <p className="mono">Approximate global population estimate frequently cited in conservation messaging.</p>
+          <p className="mono">Only around 3,000 Grevy&apos;s zebras remain globally, and approximately 90% are in Northern Kenya.</p>
         </article>
         <article className="stat-card">
-          <h3>Core Method</h3>
-          <span className="stat-number">Community-Led</span>
-          <p className="mono">People living in zebra range areas are central to data collection and stewardship.</p>
+          <h3>Historic Trend</h3>
+          <span className="stat-number">80% Decline</span>
+          <p className="mono">Grevy&apos;s zebra numbers have fallen by about 80% since the 1970s.</p>
+        </article>
+        <article className="stat-card">
+          <h3>Operational Scale</h3>
+          <span className="stat-number">20,017 km²</span>
+          <p className="mono">The Trust manages more than 20,017 square kilometers of conservation operations.</p>
         </article>
       </section>
 
       <section className="card-grid cols-3">
         <article className="card">
           <h3>Programs</h3>
-          <p>From healthy rangelands to biodiversity monitoring and infrastructure mitigation.</p>
+          <p>Grevy&apos;s Zebra Scouts, Ambassadors, Warriors, and Healthy Rangelands in one coordinated system.</p>
           <div className="button-row" style={{ marginTop: "0.8rem" }}>
-            <Link href="/conservation" className="neo-btn">
+            <Link href="/programs" className="neo-btn">
               View Workstreams
             </Link>
           </div>
         </article>
         <article className="card">
-          <h3>Digital Impact</h3>
-          <p>Explore a data-first narrative of outcomes, participation, and ecological signals.</p>
+          <h3>Conservation Status</h3>
+          <p>Explore species pressure, population context, and why protected movement corridors matter.</p>
           <div className="button-row" style={{ marginTop: "0.8rem" }}>
-            <Link href="/digital-impact" className="neo-btn">
-              Open Dashboard
+            <Link href="/conservation-status" className="neo-btn">
+              View Status
             </Link>
           </div>
         </article>

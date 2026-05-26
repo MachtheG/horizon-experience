@@ -11,8 +11,8 @@ export default function GrevysZebra() {
             <p className="eyebrow">Species Profile</p>
             <h1 className="hero-title">The Grevy&apos;s Zebra</h1>
             <p className="hero-subtitle mono">
-              The largest zebra species, recognized by narrow stripes, large rounded ears, and arid-land
-              adaptation.
+              The largest zebra species, recognized by narrow stripes, large rounded &quot;Mickey Mouse&quot; ears, and
+              white bellies.
             </p>
             <p className="lead">
               Grevy&apos;s zebra populations are concentrated in northern Kenya with a smaller range in Ethiopia. The
@@ -21,8 +21,8 @@ export default function GrevysZebra() {
           </div>
           <div className="hero-media">
             <Image
-              src="/images/pattern.png"
-              alt="Close-up zebra stripe pattern highlighting distinctive Grevy's zebra markings"
+              src="https://www.grevyszebratrust.org/wp-content/uploads/2020/07/GZT-Nelson94.jpg"
+              alt="Grevy's zebra with distinctive ears and narrow stripes in dry habitat"
               fill
               className="neo-image-frame"
               priority

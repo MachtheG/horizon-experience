@@ -5,9 +5,9 @@ export default function ProgramsPage() {
         <div className="hero-grid" style={{ gridTemplateColumns: "1fr" }}>
           <div>
             <p className="eyebrow">What We Do</p>
-            <h1 className="hero-title">Programs</h1>
+            <h1 className="hero-title">Our Programs</h1>
             <p className="hero-subtitle mono">
-              Program architecture aligned around species survival, landscape function, and community resilience.
+              Linked community programs that advance zebra survival, landscape resilience, and local leadership.
             </p>
           </div>
         </div>
@@ -15,28 +15,46 @@ export default function ProgramsPage() {
 
       <section className="card-grid cols-3">
         <article className="card">
-          <h3>Species Monitoring</h3>
-          <p>Field scouts and technical teams collect recurring data on Grevy&apos;s zebra distribution and health.</p>
+          <h3>Grevy&apos;s Zebra Scouts</h3>
+          <p>
+            Scouts carry out regular field monitoring on sightings, behavior, and habitat pressures to guide
+            conservation action in real time.
+          </p>
         </article>
         <article className="card">
-          <h3>Rangeland Restoration</h3>
-          <p>Landscape rehabilitation efforts address vegetation loss, soil stress, and forage instability.</p>
+          <h3>Ambassadors</h3>
+          <p>
+            Ambassadors strengthen conservation awareness and participation between schools, households, and
+            communities across zebra range areas.
+          </p>
         </article>
         <article className="card">
-          <h3>Community Leadership</h3>
-          <p>Women, youth, and local leaders drive conservation implementation where outcomes matter most.</p>
+          <h3>Warriors</h3>
+          <p>
+            Warriors support wildlife protection, local stewardship, and field operations where social cohesion and
+            ecological health are deeply connected.
+          </p>
         </article>
         <article className="card">
-          <h3>Livelihood Innovation</h3>
-          <p>Support for resilient livelihoods helps reduce pressure on habitat while improving local wellbeing.</p>
+          <h3>Healthy Rangelands</h3>
+          <p>
+            Holistic Land Management improves forage availability, soil condition, and ecosystem function while
+            reducing pressure on Grevy&apos;s zebra habitat.
+          </p>
         </article>
         <article className="card">
-          <h3>Corridor Safeguarding</h3>
-          <p>Program actions reduce fragmentation and protect zebra movement pathways between key habitats.</p>
+          <h3>Nkirreten Project</h3>
+          <p>
+            Women-led reusable sanitary pad production supports dignity, livelihoods, and conservation-positive
+            community resilience.
+          </p>
         </article>
         <article className="card">
-          <h3>Evidence-Based Planning</h3>
-          <p>Data and local observations inform adaptive management and long-term conservation choices.</p>
+          <h3>Education & Scholarships</h3>
+          <p>
+            Scholarships build the next generation of local conservation leaders through practical opportunity and
+            long-term support.
+          </p>
         </article>
       </section>
     </main>
