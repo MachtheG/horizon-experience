@@ -4,30 +4,56 @@ import Image from "next/image";
 
 export default function GrevysZebra() {
   return (
-    <main>
-      <div className="scroll-container">
-        <section className="section">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '2rem' }}>
-             <h2 className="hero-title" style={{ fontSize: '5rem', color: 'var(--color-sage)', margin: 0 }}>The Grevy's Zebra</h2>
-             <div style={{ width: '300px', height: '150px', position: 'relative' }}>
-                <Image 
-                   src="/images/pattern.png" 
-                   alt="Zebra Pattern Texture" 
-                   fill
-                   className="neo-image-frame"
-                   style={{ objectPosition: 'center', opacity: 0.8 }}
-                />
-             </div>
+    <main className="page">
+      <section className="hero">
+        <div className="hero-grid">
+          <div>
+            <p className="eyebrow">Species Profile</p>
+            <h1 className="hero-title">The Grevy&apos;s Zebra</h1>
+            <p className="hero-subtitle mono">
+              The largest zebra species, recognized by narrow stripes, large rounded ears, and arid-land
+              adaptation.
+            </p>
+            <p className="lead">
+              Grevy&apos;s zebra populations are concentrated in northern Kenya with a smaller range in Ethiopia. The
+              species faces pressure from habitat fragmentation, water stress, and changing land-use dynamics.
+            </p>
           </div>
-          <p className="mono" style={{ fontSize: '1.2rem', lineHeight: 1.8, maxWidth: '800px', marginTop: '2rem' }}>
-            The Grevy's zebra is the largest and most endangered of the three zebra species. Identifiable by their narrow, tightly spaced stripes and large, rounded ears, they are uniquely adapted to the harsh, arid landscapes of Northern Kenya and Ethiopia.
+          <div className="hero-media">
+            <Image
+              src="/images/pattern.png"
+              alt="Close-up zebra stripe pattern highlighting distinctive Grevy's zebra markings"
+              fill
+              className="neo-image-frame"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="card-grid cols-3">
+        <article className="card">
+          <h3>Why Stripes Matter</h3>
+          <p>
+            Grevy&apos;s zebra stripes are tighter and more numerous than plains zebras, creating a unique visual
+            identity that supports species recognition.
           </p>
-          <div style={{ marginTop: '4rem', padding: '2rem', border: '4px solid var(--color-ochre)', backgroundColor: 'var(--color-charcoal)' }}>
-            <h3 style={{ color: 'var(--color-ochre)', fontSize: '2rem', marginBottom: '1rem' }}>Only 3,000 Left</h3>
-            <p className="mono">Habitat loss, competition for water, and infrastructure development threaten their survival. Without immediate, sustained intervention, we risk losing this iconic species forever.</p>
-          </div>
-        </section>
-      </div>
+        </article>
+        <article className="card">
+          <h3>Landscape Challenge</h3>
+          <p>
+            Species survival depends on connected movement corridors between water and forage resources across dry
+            landscapes.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Urgency</h3>
+          <p>
+            Endangered status and relatively small populations mean each breeding season and each protected habitat
+            unit is significant.
+          </p>
+        </article>
+      </section>
     </main>
   );
 }

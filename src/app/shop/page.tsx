@@ -2,22 +2,25 @@
 
 export default function Shop() {
   return (
-    <main>
-      <div className="scroll-container">
-        <section className="section" style={{ minHeight: '80vh', textAlign: 'center', alignItems: 'center' }}>
-          <h2 className="hero-title" style={{ fontSize: '4rem', color: 'var(--color-sage)', margin: 0 }}>Shop</h2>
-          <p className="hero-subtitle mono" style={{ maxWidth: '600px', color: 'var(--color-zebra-white)', marginTop: '2rem' }}>
-            Coming Soon
-          </p>
-          <p className="mono" style={{ marginTop: '2rem', maxWidth: '600px' }}>
-            We are working on a storefront to offer artisanal goods created by the local Samburu women's cooperatives. 
-            All proceeds will go directly back into community conservation efforts.
-          </p>
-          <div style={{ marginTop: '3rem' }}>
-            <button className="neo-btn">Notify Me</button>
+    <main className="page">
+      <section className="hero">
+        <div className="hero-grid" style={{ gridTemplateColumns: "1fr" }}>
+          <div>
+            <p className="eyebrow">Community Marketplace</p>
+            <h1 className="hero-title">Shop for Conservation</h1>
+            <p className="hero-subtitle mono">
+              A curated storefront is in development to connect supporters with community-crafted products.
+            </p>
+            <p className="lead">
+              Planned merchandise and artisan collections are intended to help channel additional revenue into
+              wildlife monitoring, youth opportunities, and landscape restoration programs.
+            </p>
+            <div className="button-row" style={{ marginTop: "1rem" }}>
+              <button className="neo-btn">Notify Me</button>
+            </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }

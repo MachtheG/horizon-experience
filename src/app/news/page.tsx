@@ -4,34 +4,55 @@ import Image from "next/image";
 
 export default function News() {
   return (
-    <main>
-      <div className="scroll-container">
-        <section className="section" style={{ backgroundColor: 'var(--color-ochre)' }}>
-          <h2 className="hero-title" style={{ fontSize: '4rem', color: 'var(--color-charcoal)' }}>Impact Stories</h2>
-          
-          <div style={{ display: 'flex', gap: '4rem', marginTop: '4rem', alignItems: 'center' }}>
-             <div style={{ flex: 1, position: 'relative', height: '400px' }}>
-                <Image 
-                  src="/images/rangelands.png" 
-                  alt="Samburu Rangelands" 
-                  fill
-                  className="neo-image-frame"
-                />
-             </div>
-             <div style={{ flex: 1 }}>
-                <h3 style={{ fontSize: '2rem', color: 'var(--color-charcoal)', marginBottom: '1rem' }}>Beekeeping Initiative</h3>
-                <p className="mono" style={{ color: 'var(--color-charcoal)', marginBottom: '2rem', fontSize: '1.1rem' }}>
-                  Providing alternative livelihoods to communities, reducing reliance on natural resources while promoting pollination and ecosystem health.
-                </p>
-                
-                <h3 style={{ fontSize: '2rem', color: 'var(--color-charcoal)', marginBottom: '1rem' }}>Family Leadership</h3>
-                <p className="mono" style={{ color: 'var(--color-charcoal)', marginBottom: '2rem', fontSize: '1.1rem' }}>
-                  Empowering families to take active leadership roles in the Nkirreten project and Samburu cultural conservation.
-                </p>
-             </div>
+    <main className="page">
+      <section className="hero">
+        <div className="hero-grid">
+          <div>
+            <p className="eyebrow">News & Stories</p>
+            <h1 className="hero-title">Field Updates from the Trust</h1>
+            <p className="hero-subtitle mono">
+              Conservation stories, partnership milestones, and practical innovations from zebra range landscapes.
+            </p>
           </div>
-        </section>
-      </div>
+          <div className="hero-media">
+            <Image
+              src="/images/rangelands.png"
+              alt="Open rangeland landscape where community-led conservation activities take place"
+              fill
+              className="neo-image-frame"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="card-grid">
+        <article className="card">
+          <h3>Livelihood Partnerships Expand</h3>
+          <p>
+            Community livelihood initiatives continue to reduce pressure on fragile habitats while strengthening
+            household resilience.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Range Monitoring Cycle Complete</h3>
+          <p>
+            Scout reporting and survey cycles improve visibility into zebra movement and habitat stress patterns.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Women-Led Restoration Scaling</h3>
+          <p>
+            Grassroots restoration teams are helping stabilize degraded zones through practical, culturally aligned
+            approaches.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Youth Leadership Pipeline</h3>
+          <p>
+            Scholarship and mentorship pathways continue to connect local students to conservation careers.
+          </p>
+        </article>
+      </section>
     </main>
   );
 }

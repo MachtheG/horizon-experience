@@ -2,34 +2,47 @@
 
 export default function Community() {
   return (
-    <main>
-      <div className="scroll-container">
-        <section className="section">
-          <h2 className="hero-title" style={{ fontSize: '5rem', color: 'var(--color-ochre)', margin: 0 }}>Community</h2>
-          <p className="hero-subtitle mono" style={{ maxWidth: '600px', color: 'var(--color-zebra-white)', marginTop: '2rem' }}>
-            People are the solution.
-          </p>
-
-          <div className="programs-grid" style={{ marginTop: '4rem' }}>
-            <div className="program-card">
-              <h3>Grevy's Zebra Scouts</h3>
-              <p className="mono">Local community members monitoring zebra populations and engaging their communities in conservation.</p>
-            </div>
-            <div className="program-card">
-              <h3>Nkirreten Project</h3>
-              <p className="mono">Healing the degraded rangelands through sustainable land management and Samburu cultural practices.</p>
-            </div>
-            <div className="program-card">
-              <h3>Warriors</h3>
-              <p className="mono">Engaging young Samburu men in active wildlife protection and data collection.</p>
-            </div>
-            <div className="program-card">
-              <h3>Scholarships</h3>
-              <p className="mono">Investing in the education of the next generation of conservation leaders in Kenya.</p>
-            </div>
+    <main className="page">
+      <section className="hero">
+        <div className="hero-grid" style={{ gridTemplateColumns: "1fr" }}>
+          <div>
+            <p className="eyebrow">Community Leadership</p>
+            <h1 className="hero-title">People Are the Conservation Engine</h1>
+            <p className="hero-subtitle mono">
+              Locally embedded teams build trust, gather evidence, and lead action in zebra landscapes.
+            </p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section className="card-grid">
+        <article className="card">
+          <h3>Grevy&apos;s Zebra Scouts</h3>
+          <p>
+            Community members conduct regular field observations, population monitoring, and local outreach in
+            range landscapes.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Nkirreten Rangeland Action</h3>
+          <p>
+            Women-led restoration and stewardship approaches support soil recovery, forage resilience, and shared
+            land-use planning.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Warrior Engagement</h3>
+          <p>
+            Young leaders are included in wildlife protection efforts, helping strengthen ecological guardianship.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Scholarships and Youth Pathways</h3>
+          <p>
+            Education support builds future conservation professionals, researchers, and community decision-makers.
+          </p>
+        </article>
+      </section>
     </main>
   );
 }

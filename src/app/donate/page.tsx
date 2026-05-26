@@ -3,44 +3,52 @@
 export default function Donate() {
   const handleDonate = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you for your generous simulated donation. In a real environment, this would process payment.");
+    alert("Thank you. This is a demo flow. Connect your payment platform for live donations.");
   };
 
   return (
-    <main>
-      <div className="scroll-container">
-        <section className="section" style={{ minHeight: '80vh' }}>
-          <h2 className="hero-title" style={{ fontSize: '5rem', color: 'var(--color-ochre)', margin: 0 }}>Restore the Horizon</h2>
-          <p className="hero-subtitle mono" style={{ maxWidth: '600px', color: 'var(--color-zebra-white)', marginTop: '2rem' }}>
-            Your contribution directly funds the scouts, scholars, and rangeland restoration efforts.
-          </p>
-
-          <div style={{ marginTop: '4rem', display: 'flex', gap: '4rem' }}>
-            <div style={{ flex: 1, backgroundColor: 'var(--color-charcoal)', border: '4px solid var(--color-sage)', padding: '2rem' }}>
-              <h3 style={{ color: 'var(--color-sage)', fontSize: '2rem', marginBottom: '1rem' }}>Make a Donation</h3>
-              <form onSubmit={handleDonate}>
-                <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
-                  <button type="button" className="neo-btn" style={{ padding: '0.5rem 1rem' }}>$50</button>
-                  <button type="button" className="neo-btn" style={{ padding: '0.5rem 1rem' }}>$100</button>
-                  <button type="button" className="neo-btn" style={{ padding: '0.5rem 1rem' }}>$500</button>
-                  <input type="number" placeholder="Other" className="neo-input" style={{ marginBottom: 0 }} />
-                </div>
-                <input type="text" placeholder="Full Name" className="neo-input" required />
-                <input type="email" placeholder="Email Address" className="neo-input" required />
-                <button type="submit" className="neo-btn" style={{ width: '100%', backgroundColor: 'var(--color-ochre)' }}>Donate Now</button>
-              </form>
-            </div>
-            <div style={{ flex: 1 }}>
-               <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Where Your Money Goes</h3>
-               <ul className="mono" style={{ listStyleType: 'square', paddingLeft: '1.5rem', lineHeight: 2 }}>
-                 <li><strong>$50:</strong> Equips a scout with GPS and field gear.</li>
-                 <li><strong>$100:</strong> Supports the Nkirreten women restoring degraded land.</li>
-                 <li><strong>$500:</strong> Funds a full scholarship for a Samburu student.</li>
-               </ul>
-            </div>
+    <main className="page">
+      <section className="hero">
+        <div className="hero-grid" style={{ gridTemplateColumns: "1fr" }}>
+          <div>
+            <p className="eyebrow">Get Involved</p>
+            <h1 className="hero-title">Fund Frontline Conservation</h1>
+            <p className="hero-subtitle mono">
+              Your support powers community scouts, rangeland restoration, and the next generation of conservation
+              leaders.
+            </p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section className="split">
+        <article className="card">
+          <h3>Make a Donation</h3>
+          <form onSubmit={handleDonate} className="input-grid" style={{ marginTop: "0.7rem" }}>
+            <div className="button-row">
+              <button type="button" className="neo-btn">$50</button>
+              <button type="button" className="neo-btn">$100</button>
+              <button type="button" className="neo-btn">$500</button>
+            </div>
+            <input type="number" min="1" placeholder="Other amount (USD)" className="neo-input" />
+            <input type="text" placeholder="Full Name" className="neo-input" required />
+            <input type="email" placeholder="Email Address" className="neo-input" required />
+            <button type="submit" className="neo-btn neo-btn-amber">
+              Donate Now
+            </button>
+          </form>
+        </article>
+
+        <article className="card">
+          <h3>Impact Pathways</h3>
+          <ul className="info-list mono" style={{ marginTop: "0.7rem" }}>
+            <li>$50 helps equip a community scout for routine field monitoring.</li>
+            <li>$100 supports women-led restoration activity in degraded range areas.</li>
+            <li>$500 contributes to scholarships for emerging local conservation leaders.</li>
+            <li>Monthly giving helps keep year-round monitoring and community engagement stable.</li>
+          </ul>
+        </article>
+      </section>
     </main>
   );
 }
