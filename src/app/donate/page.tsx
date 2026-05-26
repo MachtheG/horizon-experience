@@ -18,6 +18,10 @@ export default function Donate() {
             <p className="hero-subtitle mono">
               Your support powers scouts, healthy rangelands, education pathways, and long-term species recovery.
             </p>
+            <p className="lead">
+              Contributions support real operating needs in Northern Kenya: field monitoring logistics, biodiversity
+              equipment, youth opportunity pathways, and practical landscape restoration coordination.
+            </p>
           </div>
         </div>
       </section>

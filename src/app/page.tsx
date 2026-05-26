@@ -87,6 +87,25 @@ export default function Home() {
           </div>
         </article>
       </section>
+
+      <section className="card-grid">
+        <article className="card">
+          <h3>Why This Work Matters</h3>
+          <p>
+            Grevy&apos;s zebra survival is tightly linked to land condition, water access, and local governance. The
+            trust&apos;s approach is not a single intervention, but a coordinated system built with communities who live
+            in and steward these landscapes every day.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Digital Fieldspace Purpose</h3>
+          <p>
+            This platform is designed as a public-facing conservation interface that translates field realities into
+            understandable narratives. It combines species data, program stories, and support pathways so users can
+            move from awareness to practical action.
+          </p>
+        </article>
+      </section>
     </main>
   );
 }

@@ -44,6 +44,24 @@ export default function ConservationStatusPage() {
           <p className="mono">Grevy&apos;s Zebra Trust manages over 20,017 square kilometers of operation area.</p>
         </article>
       </section>
+
+      <section className="card-grid">
+        <article className="card">
+          <h3>Primary Threat Drivers</h3>
+          <p>
+            Habitat fragmentation, variable rainfall, water-point competition, and linear infrastructure all affect
+            movement, breeding success, and access to forage. These pressures shift seasonally and require adaptive
+            field coordination.
+          </p>
+        </article>
+        <article className="card">
+          <h3>Integrated Response</h3>
+          <p>
+            The Trust combines scout monitoring, rangeland management, education, and local leadership support so
+            conservation outcomes remain grounded in community realities and operationally feasible over time.
+          </p>
+        </article>
+      </section>
     </main>
   );
 }
