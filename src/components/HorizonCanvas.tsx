@@ -22,7 +22,7 @@ export default function HorizonCanvas() {
         camera={{ position: [0, 2, 5], fov: isMobile ? 66 : 75 }}
         gl={{ antialias: !isMobile, alpha: true, powerPreference: "high-performance" }}
       >
-        <fog attach="fog" args={["#080d16", 6, 36]} />
+        <fog attach="fog" args={["#1b1a15", 6, 36]} />
         <SavannaBiome lowPower={isMobile} />
       </Canvas>
     </div>

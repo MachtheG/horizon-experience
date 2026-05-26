@@ -6,19 +6,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="page">
-      <section className="hero">
+      <section className="hero hero-intro">
         <div className="hero-grid">
-          <div>
+          <div className="intro-stage-brand">
             <p className="eyebrow">Northern Kenya Conservation Network</p>
-            <h1 className="hero-title">Grevy&apos;s Zebra in Digital Space</h1>
-            <p className="hero-subtitle mono">
+            <h1 className="hero-title intro-stage-copy">Grevy&apos;s Zebra in Digital Space</h1>
+            <p className="hero-subtitle mono intro-stage-copy">
               To conserve and grow the Grevy&rsquo;s zebra population in Northern Kenya.
             </p>
-            <p className="lead">
+            <p className="lead intro-stage-copy">
               Grevy&apos;s Zebra Trust combines community leadership, field monitoring, and adaptive rangeland
               stewardship to secure a future for this endangered species across northern Kenya.
             </p>
-            <div className="button-row" style={{ marginTop: "1rem" }}>
+            <div className="button-row intro-stage-actions" style={{ marginTop: "1rem" }}>
               <Link href="/donate" className="neo-btn neo-btn-amber">
                 Support Conservation
               </Link>
@@ -28,7 +28,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-media">
+          <div className="hero-media intro-stage-space">
             <Image
               src="/images/hero.png"
               alt="Grevy's zebra standing alert in arid rangeland habitat"

@@ -70,9 +70,9 @@ const fragmentShader = `
     // Sharpen the stripes into distinct black and white
     float mask = smoothstep(-uContrast, uContrast, stripes);
     
-    // Colors (Charcoal and Zebra White)
-    vec3 charcoal = vec3(0.05, 0.08, 0.14);
-    vec3 zebraWhite = vec3(0.93, 0.96, 0.99);
+    // Colors (Savannah charcoal and warm off-white)
+    vec3 charcoal = vec3(0.14, 0.12, 0.09);
+    vec3 zebraWhite = vec3(0.93, 0.9, 0.84);
     
     vec3 color = mix(charcoal, zebraWhite, mask);
     
