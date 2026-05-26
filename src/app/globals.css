@@ -100,6 +100,63 @@ a {
   overflow: hidden;
 }
 
+.ambient-zebra-image-trail {
+  position: absolute;
+  width: 118px;
+  height: 76px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(245, 239, 227, 0.34);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  opacity: 0.22;
+}
+
+.ambient-zebra-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ambient-zebra-image-trail-one {
+  top: 10%;
+  left: -15%;
+  animation: zebraImgSlideOne 34s linear infinite;
+}
+
+.ambient-zebra-image-trail-two {
+  bottom: 7%;
+  right: -15%;
+  animation: zebraImgSlideTwo 36s linear infinite;
+}
+
+@keyframes zebraImgSlideOne {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate3d(130vw, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes zebraImgSlideTwo {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate3d(-132vw, 0, 0);
+    opacity: 0;
+  }
+}
+
 .ambient-zebra-layer svg {
   position: absolute;
   width: min(36vw, 340px);
@@ -253,6 +310,36 @@ a {
   transform: translateY(-1px);
 }
 
+.nav-zebra-runway {
+  position: relative;
+  height: 38px;
+  width: min(280px, 100%);
+  border: 1px dashed rgba(217, 200, 171, 0.38);
+  border-radius: 999px;
+  background: rgba(53, 37, 26, 0.45);
+  overflow: hidden;
+}
+
+.nav-zebra-runner {
+  position: absolute;
+  top: 2px;
+  left: -58px;
+  width: 52px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 8px;
+  animation: navZebraRun 12s linear infinite;
+}
+
+@keyframes navZebraRun {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(330px);
+  }
+}
+
 .nav-link-secondary {
   border-color: rgba(255, 186, 91, 0.2);
   background: rgba(19, 23, 34, 0.64);
@@ -367,6 +454,15 @@ a {
 
 .neo-image-frame {
   object-fit: cover;
+}
+
+.program-ref-media {
+  position: relative;
+  min-height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(217, 200, 171, 0.35);
+  margin-bottom: 0.8rem;
 }
 
 .stats-grid,
@@ -534,6 +630,14 @@ a {
   background: rgba(25, 19, 14, 0.8);
 }
 
+.map-3d-canvas-wrap {
+  position: relative;
+  min-height: 340px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(217, 200, 171, 0.32);
+}
+
 .map-layer {
   position: absolute;
   inset: 0;
@@ -617,6 +721,10 @@ a {
   .route-gallery-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .nav-zebra-runway {
+    justify-self: end;
+  }
 }
 
 @media (max-width: 759px) and (min-resolution: 2dppx) {
@@ -632,6 +740,16 @@ a {
   .ambient-zebra-layer svg {
     width: min(48vw, 260px);
     opacity: 0.1;
+  }
+
+  .ambient-zebra-image-trail {
+    width: 92px;
+    height: 58px;
+    opacity: 0.15;
+  }
+
+  .map-3d-canvas-wrap {
+    min-height: 280px;
   }
 }
 

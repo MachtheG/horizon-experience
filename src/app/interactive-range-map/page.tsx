@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import InteractiveRangeMap3D from "@/components/InteractiveRangeMap3D";
 
 type Layer = "terrain" | "zebra" | "community";
 
@@ -22,6 +23,11 @@ export default function InteractiveRangeMapPage() {
               This 3D-ready concept is structured for future GIS integration. It helps users explore landscape
               context, seasonal pressure zones, and why habitat connectivity matters for Grevy&apos;s zebra survival.
             </p>
+            <p className="lead">
+              Use the map layers to compare ecological terrain, zebra distribution hotspots, and community-managed
+              conservation boundaries. This allows supporters, researchers, and local partners to quickly interpret
+              where conservation pressure and response activities are concentrated.
+            </p>
             <div className="map-toggle-row">
               <button className="neo-btn" type="button" aria-pressed={layer === "terrain"} onClick={() => setLayer("terrain")}>Terrain</button>
               <button className="neo-btn" type="button" aria-pressed={layer === "zebra"} onClick={() => setLayer("zebra")}>Zebra Distribution</button>
@@ -41,10 +47,8 @@ export default function InteractiveRangeMapPage() {
 
       <section className="card">
         <h3>Interactive Layer Preview</h3>
-        <div className="map-layer-wrap" style={{ marginTop: "0.8rem" }}>
-          <div className={`map-layer map-layer-terrain ${layer === "terrain" ? "is-active" : ""}`} />
-          <div className={`map-layer map-layer-zebra ${layer === "zebra" ? "is-active" : ""}`} />
-          <div className={`map-layer map-layer-community ${layer === "community" ? "is-active" : ""}`} />
+        <div style={{ marginTop: "0.8rem" }}>
+          <InteractiveRangeMap3D activeLayer={layer} />
         </div>
       </section>
 

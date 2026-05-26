@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -52,6 +53,15 @@ export default function TopNav() {
               );
             })}
           </ul>
+          <div className="nav-zebra-runway" aria-hidden="true">
+            <Image
+              src="/images/nav-zebra.jpg"
+              alt=""
+              width={52}
+              height={34}
+              className="nav-zebra-runner"
+            />
+          </div>
         </div>
       </nav>
     </header>
